@@ -31,6 +31,9 @@
             bindings =
                 <&kp GRAVE &kp GRAVE &kp GRAVE &kp RET &kp RET &kp GRAVE &kp GRAVE &kp GRAVE &kp UP>,
                 <&macro_press>;
+
+            wait-ms = <3000>;
+            tap-ms = <200>;
         };
 
         alt_f4: alt_f4 {
