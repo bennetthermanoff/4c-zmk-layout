@@ -18,7 +18,7 @@
         compatible = "zmk,combos";
 
         btMo {
-            bindings = <&mo 3>;
+            bindings = <&mo 4>;
             key-positions = <56 57>;
         };
 
@@ -33,7 +33,7 @@
         };
 
         swapOS {
-            bindings = <&tog 4>;
+            bindings = <&tog 1>;
             key-positions = <51 54>;
         };
     };
@@ -71,7 +71,17 @@
 &kp TAB         &kp Q         &kp W         &kp E         &kp R         &kp T           &kp Y         &kp U           &kp I         &kp O          &kp P         &kp ENTER
 &kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F         &kp G           &kp H         &kp J           &kp K         &kp L          &kp SEMI      &kp APOS
 &kp LCTRL       &kp Z         &kp X         &kp C         &kp V         &kp B           &kp N         &kp M           &kp COMMA     &kp PERIOD     &kp SLASH     &kp RIGHT_SHIFT
-&mo 1           &kp LEFT_ALT  &kp SPACE     &kp LEFT_WIN  &kp LCTRL                                   &kp LEFT_SHIFT  &kp LEFT_GUI  &kp BACKSPACE  &mo 1         &mo 2
+&mo 2           &kp LEFT_ALT  &kp SPACE     &kp LEFT_WIN  &kp LCTRL                                   &kp LEFT_SHIFT  &kp LEFT_GUI  &kp BACKSPACE  &mo 2         &mo 3
+            >;
+        };
+
+        macBASE {
+            bindings = <
+&kp ESC         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0  &kp BACKSPACE
+&kp TAB         &kp Q         &kp W         &kp E         &kp R         &kp T           &kp Y         &kp U           &kp I         &kp O          &kp P         &kp ENTER
+&kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F         &kp G           &kp H         &kp J           &kp K         &kp L          &kp SEMI      &kp APOS
+&kp LGUI        &kp Z         &kp X         &kp C         &kp V         &kp B           &kp N         &kp M           &kp COMMA     &kp PERIOD     &kp SLASH     &kp RIGHT_SHIFT
+&mo 2           &kp LEFT_ALT  &kp SPACE     &kp LCTRL     &kp LGUI                                    &kp LEFT_SHIFT  &kp LCTRL     &kp BACKSPACE  &mo 2         &mo 3
             >;
         };
 
@@ -102,16 +112,6 @@
 &kp CAPS  &trans  &trans  &trans       &trans   &trans    &trans        &trans        &trans        &trans        &trans        &trans
 &trans    &trans  &trans  &trans       &trans   &trans    &trans        &trans        &trans        &trans        &trans        &trans
 &trans    &trans  &trans  &bootloader  &trans                           &trans        &sys_reset    &trans        &trans        &trans
-            >;
-        };
-
-        macBASE {
-            bindings = <
-&kp ESC         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0  &kp BACKSPACE
-&kp TAB         &kp Q         &kp W         &kp E         &kp R         &kp T           &kp Y         &kp U           &kp I         &kp O          &kp P         &kp ENTER
-&kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F         &kp G           &kp H         &kp J           &kp K         &kp L          &kp SEMI      &kp APOS
-&kp LGUI        &kp Z         &kp X         &kp C         &kp V         &kp B           &kp N         &kp M           &kp COMMA     &kp PERIOD     &kp SLASH     &kp RIGHT_SHIFT
-&mo 1           &kp LEFT_ALT  &kp SPACE     &kp LCTRL     &kp LGUI                                    &kp LEFT_SHIFT  &kp LCTRL     &kp BACKSPACE  &mo 1         &mo 2
             >;
         };
     };
