@@ -21,6 +21,16 @@
             bindings = <&mo 3>;
             key-positions = <56 57>;
         };
+
+        mux {
+            bindings = <&kp LC(B)>;
+            key-positions = <31 32>;
+        };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <28 27>;
+        };
     };
 
     macros {
